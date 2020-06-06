@@ -13,13 +13,13 @@ h1{
 #container{
   background-color: #ffeaa7;
   display:grid;
-  width: 780px;
+  width: 800px;
   max-width: 80%;
   border: 1px dotted black;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px;
   margin: 0 auto;
-  padding: 5px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   font-size: 14px;
   grid-template-columns: 0.1fr 0.1fr 0.1fr;
    grid-template-rows: 0.1fr 0.1fr 0.1fr;
@@ -40,6 +40,7 @@ h1{
 
 
 #txt{
+  background-color: #f1f2f6;
   margin:0 auto;
   text-align: center;
   grid-area: txt;
@@ -53,7 +54,7 @@ h1{
 
 
 
-input[type=text]
+#container input[type=text]
 {
   border: 1.1px solid #8842d5;
     border-radius: 5px;
@@ -61,7 +62,7 @@ input[type=text]
 
 }
 
-#rules{
+.rules{
 
   position: relative;
   font-size: 20px;
@@ -72,22 +73,53 @@ input[type=text]
   background-color: #f6e58d;
   margin: 20px -8px 30px -8px;
   padding: 10px;
-  clip-path:polygon(0 0, 100% 0, 100% calc(100% -10vw), 0, 100%);
 }
 
 h3{
   font-size: 26px;
 }
 
-#rules ul{
+.rules ul{
   list-style-type: none;
 }
 
+
+
 @media (max-width: 800px), screen and (orientation: portrait)  {
+
+h1{
+  font-size: 4em;
+}
+
+
+.rules h3{
+  font-size: 1.7em;
+}
+
+.rules li{
+  font-size: 0.8em;
+}
 
   #container{
     display:  block;
+    position: relative;
+    left:80px;
+    float: left;
+    width: 400px;
+
   }
+
+#images{
+  width: 200px;
+  height: 160px;
+}
+
+#container input[type=text]{
+  width: 200px;
+  padding: 5px;
+  font-size: 1.7em;
+  font-weight: bolder;
+}
 
 #rules{
   font-size: 14px;
@@ -96,4 +128,5 @@ h3{
 h3{
   font-size: 18px;
 }
+
 }
