@@ -83,10 +83,10 @@ h3{
   list-style-type: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px), screen and (orientation: portrait)  {
 
   #container{
-    display: block;
+    display:  block;
   }
 
 #rules{
