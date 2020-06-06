@@ -1,7 +1,7 @@
 body{
   text-align: center;
 //  background-color: #00cec9;
-  background: linear-gradient(180deg, #00cec9 , #f368e0);
+  background: linear-gradient(219deg, #7168f3,#00cec9 , #f368e0, #f368a0);
 }
 h1{
 
@@ -13,7 +13,7 @@ h1{
 #container{
   background-color: #ffeaa7;
   display:grid;
-  width: 770px;
+  width: 780px;
   max-width: 80%;
   border: 1px dotted black;
   border-radius: 10px;
@@ -64,7 +64,7 @@ input[type=text]
 #rules{
 
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   border: 1px solid black;
 
@@ -72,13 +72,28 @@ input[type=text]
   background-color: #f6e58d;
   margin: 20px -8px 30px -8px;
   padding: 10px;
-
+  clip-path:polygon(0 0, 100% 0, 100% calc(100% -10vw), 0, 100%);
 }
 
 h3{
-  font-size: 24px;
+  font-size: 26px;
 }
 
 #rules ul{
   list-style-type: none;
+}
+
+@media (max-width: 800px){
+
+  #container{
+    display: block;
+  }
+
+#rules{
+  font-size: 14px;
+}
+
+h3{
+  font-size: 18 px;
+}
 }

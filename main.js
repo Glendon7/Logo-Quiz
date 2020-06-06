@@ -5,6 +5,7 @@ var question;
 switch (op) {
   case 1:
 
+
   question = document.quiz.question1.value.toLowerCase();
 
   if (question == "webclues infotech")
