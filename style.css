@@ -83,9 +83,23 @@ h3{
   list-style-type: none;
 }
 
+@media (orientation:landscape)  {
+
+  #container input[type="text"]{
+    padding: 0 -2;
+    margin: 0;
+
+  }
+
+figure{
+  margin-left: -5px;
+  padding-left: -2px;
+  
+}
+}
 
 
-@media (max-width: 800px), screen and (orientation: portrait)  {
+@media (max-width: 600px), screen and (orientation: portrait)  {
 
 h1{
   font-size: 4em;
