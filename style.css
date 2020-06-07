@@ -13,7 +13,7 @@ h1{
 #container{
   background-color: #ffeaa7;
   display:grid;
-  width: 800px;
+  width: 790px;
   max-width: 80%;
   border: 1px dotted black;
   border-radius: 10px;
@@ -22,17 +22,13 @@ h1{
   padding: 10px 0px 0px 0px;
   font-size: 14px;
   grid-template-columns: 0.1fr 0.1fr 0.1fr;
-   grid-template-rows: 0.1fr 0.1fr 0.1fr;
-  grid-template-areas:
-        "img img img"
-        "txt txt txt"
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
 
 }
 #images{
-  grid-area: img;
   margin: 5px 5px 10px 5px;
-  width: 120px;
-  height: 100px;
+  width: 140px;
+  height: 110px;
   border: 1px solid black;
 
 
@@ -43,14 +39,11 @@ h1{
   background-color: #f1f2f6;
   margin:0 auto;
   text-align: center;
-  grid-area: txt;
   padding:3px;
   font-weight: bold;
 }
 
-#txt:focus{
-    margin:5px;
-}
+
 
 
 
@@ -58,17 +51,22 @@ h1{
 {
   border: 1.1px solid #8842d5;
     border-radius: 5px;
-    margin:5px;
+    margin:0 auto;
 
 }
 
+#container input[type=text]:focus{
+  background-color: #ece578;
+  margin:8px;
+
+
+}
 .rules{
 
   position: relative;
   font-size: 20px;
   font-weight: bold;
   border: 1px solid black;
-
   box-shadow: 0 0 10px 2px;
   background-color: #f6e58d;
   margin: 20px -8px 30px -8px;
@@ -83,23 +81,8 @@ h3{
   list-style-type: none;
 }
 
-@media (orientation:landscape)  {
 
-  #container input[type="text"]{
-    padding: 0 -2;
-    margin: 0;
-
-  }
-
-figure{
-  margin-left: -5px;
-  padding-left: -2px;
-  
-}
-}
-
-
-@media (max-width: 600px), screen and (orientation: portrait)  {
+@media (max-width: 500px), screen and (orientation: portrait)  {
 
 h1{
   font-size: 4em;
