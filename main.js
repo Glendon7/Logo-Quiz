@@ -1,3 +1,22 @@
+function ready() {
+  document.getElementById("start").style.visibility="hidden";
+  document.getElementById("quiz").style.visibility="visible";
+  document.getElementById("sc").style.visibility="visible";
+  document.getElementById("tc").style.visibility="visible";
+  document.getElementById("score").innerHTML=score;
+}
+
+var sec = 0;
+    function pad ( val ) { return val > 9 ? val : "0" + val; }
+
+    setInterval( function(){
+        document.getElementById("seconds").innerHTML=pad(++sec%60);
+        document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+    }, 1000);
+
+var score=0;
+
+
 function check(op){
 
 var question;
@@ -10,6 +29,9 @@ switch (op) {
 
   if (question == "webclues infotech")
   {document.quiz.question1.style.background = '#0be881';
+    score+=10;
+    document.getElementById("score").innerHTML=score;
+    document.quiz.question1.readOnly=true;
 }
   else {
     document.quiz.question1.style.background = '#ff5252';
@@ -23,6 +45,9 @@ switch (op) {
 
   if (question == "magneto it solutions")
   {document.quiz.question2.style.background = '#0be881';
+  score+=10;
+  document.getElementById("score").innerHTML=score;
+  document.quiz.question2.readOnly=true;
 }
   else {
     document.quiz.question2.style.background = '#ff5252';
@@ -35,6 +60,9 @@ case 3:
   question = document.quiz.question3.value.toLowerCase();
   if (question == "mphasis")
   {document.quiz.question3.style.background = '#0be881';
+  score+=10;
+  document.getElementById("score").innerHTML=score;
+  document.quiz.question3.readOnly=true;
 }
   else {
     document.quiz.question3.style.background = '#ff5252';
@@ -48,7 +76,10 @@ case 4:
 
   if (question == "appentus")
   {document.quiz.question4.style.background = '#0be881';
-  }
+  score+=10;
+  document.getElementById("score").innerHTML=score;
+  document.quiz.question4.readOnly=true;
+}
   else {
     document.quiz.question4.style.background = '#ff5252';
 
@@ -61,7 +92,10 @@ case 5:
 
   if (question == "trigent")
   {document.quiz.question5.style.background = '#0be881';
-  }
+  score+=10;
+  document.getElementById("score").innerHTML=score;
+  document.quiz.question5.readOnly=true;
+}
   else {
     document.quiz.question5.style.background = '#ff5252';
   }
@@ -73,6 +107,9 @@ case 6:
 
     if (question == "endive software")
     {document.quiz.question6.style.background = '#0be881';
+    score+=10;
+    document.getElementById("score").innerHTML=score;
+    document.quiz.question6.readOnly=true;
   }
     else {
       document.quiz.question6.style.background = '#ff5252';
@@ -87,6 +124,9 @@ case 7:
 
       if (question == "confianz global")
       {document.quiz.question7.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question7.readOnly=true;
     }
       else {
         document.quiz.question7.style.background = '#ff5252';
@@ -100,6 +140,9 @@ case 8:
 
       if (question == "wildnet technologies")
       {document.quiz.question8.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question8.readOnly=true;
     }
       else {
         document.quiz.question8.style.background = '#ff5252';
@@ -113,6 +156,9 @@ case 9:
 
       if (question == "tata consultancy services")
       {document.quiz.question9.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question9.readOnly=true;
     }
       else {
         document.quiz.question9.style.background = '#ff5252';
@@ -126,6 +172,9 @@ case 10:
 
       if (question == "infosys")
       {document.quiz.question10.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question10.readOnly=true;
     }
       else {
         document.quiz.question10.style.background = '#ff5252';
@@ -140,6 +189,9 @@ case 11:
 
       if (question == "clarion technologies")
       {document.quiz.question11.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question11.readOnly=true;
     }
       else {
         document.quiz.question11.style.background = '#ff5252';
@@ -153,6 +205,9 @@ case 12:
 
       if (question == "wipro")
       {document.quiz.question12.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question12.readOnly=true;
     }
       else {
         document.quiz.question12.style.background = '#ff5252';
@@ -166,6 +221,9 @@ case 13:
 
       if (question == "ideas2it")
       {document.quiz.question13.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question13.readOnly=true;
     }
       else {
         document.quiz.question13.style.background = '#ff5252';
@@ -179,6 +237,9 @@ case 14:
 
       if (question == "hcl technologies")
       {document.quiz.question14.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question14.readOnly=true;
     }
       else {
         document.quiz.question14.style.background = '#ff5252';
@@ -192,6 +253,9 @@ case 15:
 
       if (question == "larsen & toubro infotech")
       {document.quiz.question15.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question15.readOnly=true;
     }
       else {
         document.quiz.question15.style.background = '#ff5252';
@@ -205,6 +269,9 @@ case 16:
 
       if (question == "tech mahindra")
       {document.quiz.question16.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question16.readOnly=true;
     }
       else {
         document.quiz.question16.style.background = '#ff5252';
@@ -218,6 +285,9 @@ case 17:
 
       if (question == "techjini")
       {document.quiz.question17.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question17.readOnly=true;
     }
       else {
         document.quiz.question17.style.background = '#ff5252';
@@ -231,6 +301,9 @@ case 18:
 
       if (question == "mindtree")
       {document.quiz.question18.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question18.readOnly=true;
     }
       else {
         document.quiz.question18.style.background = '#ff5252';
@@ -244,6 +317,9 @@ case 19:
 
       if (question == "sasken")
       {document.quiz.question19.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question19.readOnly=true;
     }
       else {
         document.quiz.question19.style.background = '#ff5252';
@@ -257,6 +333,9 @@ case 20:
 
       if (question == "oracle financial services")
       {document.quiz.question20.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question20.readOnly=true;
     }
       else {
         document.quiz.question20.style.background = '#ff5252';
@@ -270,6 +349,9 @@ case 21:
 
       if (question == "rolta")
       {document.quiz.question21.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question21.readOnly=true;
     }
       else {
         document.quiz.question21.style.background = '#ff5252';
@@ -283,6 +365,9 @@ case 22:
 
       if (question == "cybage")
       {document.quiz.question22.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question22.readOnly=true;
     }
       else {
         document.quiz.question22.style.background = '#ff5252';
@@ -296,6 +381,9 @@ case 23:
 
       if (question == "blue star")
       {document.quiz.question23.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question23.readOnly=true;
     }
       else {
         document.quiz.question23.style.background = '#ff5252';
@@ -309,6 +397,9 @@ case 24:
 
       if (question == "aftek")
       {document.quiz.question24.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question24.readOnly=true;
     }
       else {
         document.quiz.question24.style.background = '#ff5252';
@@ -322,6 +413,9 @@ case 25:
 
       if (question == "3i infotech")
       {document.quiz.question25.style.background = '#0be881';
+      score+=10;
+      document.getElementById("score").innerHTML=score;
+      document.quiz.question25.readOnly=true;
     }
       else {
         document.quiz.question25.style.background = '#ff5252';

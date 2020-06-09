@@ -10,6 +10,71 @@ h1{
 
 }
 
+#quiz{
+  visibility: hidden;
+}
+#sc{
+  position: fixed;
+  visibility: hidden;
+  float: right;
+
+  background-color: #fed330;
+  left:13%;
+  bottom:65%;
+  padding-bottom: 2px;
+  opacity: 0.9;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 2;
+
+  border: 1px solid black;
+  border-radius: 100%;
+}
+#scorecont{
+  padding: 10px 10px 10px 10px;
+}
+
+#tc{
+  position: fixed;
+  visibility: hidden;
+  bottom:65%;
+  left: 80%;
+  background-color: #fed330;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding-bottom: 2px;
+  opacity: 0.9;
+
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+#time{
+
+  padding: 10px 10px 10px 10px;
+}
+
+
+#start{
+  background-color:Black;
+  color: white;
+  position: relative;
+  top:50%;
+  padding: 10px;
+  font-size: 20px;
+  margin: auto;
+  border: 1.5px solid #51da05;
+  border-radius: 6px;
+
+}
+
+#start:hover{
+  background-color: #0fa20f;
+  cursor: pointer;
+
+}
+
 #container{
   background-color: #ffeaa7;
   display:grid;
@@ -23,6 +88,7 @@ h1{
   font-size: 14px;
   grid-template-columns: 0.1fr 0.1fr 0.1fr;
   grid-template-rows: 0.1fr 0.1fr 0.1fr;
+  z-index: 1;
 
 }
 #images{
@@ -82,13 +148,20 @@ h3{
 }
 
 
-@media (max-width: 600vw), screen and (orientation: portrait)  {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (orientation:portrait)  {
 
 h1{
   font-size: 4em;
 }
 
 
+#sc{
+  left:5%;
+}
+
+#tc{
+  left:85%;
+}
 .rules h3{
   font-size: 1.7em;
 }

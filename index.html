@@ -19,18 +19,28 @@
       <h3> How to play</h3>
       <ul>
         <li> Guess the logo and enter your answer in the box below the logo</li>
+        <li>The box turns green if your answer is correct</li>
         <li>The logos are of IT companies </li>
         <li> Letter Case doesn't matter</li>
         <li> Do not put a space after entering an answer</li>
+
       </ul>
     </div>
+
+    <button id="start" onclick="ready()"> I'm Ready</button>
+
+    <div id="sc" >
+      <div id="scorecont" >Score=<span id="score"></span></div>
+    </div>
+        <div id="tc" >
+      <div id="time">Time=<span id="minutes"></span>:<span id="seconds"></span></div>
+    </div>
+
+
 <form id="quiz" name="quiz">
   <div id="container">
 <figure>  <img src="img/Q1.jpg" id="images" name="question1">
 <figcaption>  <input type="text"  id="txt" name="question1" onchange="check(1)" ></figcaption></figure>
-
-
-
 
 <figure>  <img src="img/Q2.jpg" id="images" name="question2">
   <figcaption><input type="text" id="txt" name="question2" onchange="check(2)"></figcaption></figure>
@@ -119,7 +129,7 @@
   <figcaption>  <input type="text" id="txt" name="question24" onchange="check(24)"></figcaption></figure>
 </div>
 
-<div id="container" >
+<div id="container">
 
 <figure>  <img src="img/Q25.jpg" id="images" name="question25">
 <figcaption>  <input type="text" id="txt" name="question25" onchange="check(25)"></figcaption></figure>
